@@ -24,7 +24,7 @@ Your program should support the following features (time permitting) (2-4 hours)
 
 ## Notes on solution:
 
-To run, simply run the script: `./script/my-cool-spellchecker`. It accepts 0, 1, or 2 arguments, read notes in the file for details.
+To run, simply run the script: `./script/my-cool-spellchecker`. It accepts 0, 1, or 2 arguments, read notes in the file for details. Requires node to be installed, not 100%, but pretty sure most any node versions will suffice.
 
 Before starting I spent a few minutes googling, and quickly found the [trie](https://en.wikipedia.org/wiki/Trie) structure as a possible option as a good data structure for building a spell-checker. Having done a number of other algorithms with trees, this seemed like a good place to start.
 
