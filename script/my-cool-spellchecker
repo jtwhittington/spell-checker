@@ -1,0 +1,37 @@
+#!/bin/bash
+
+# This script will run the built index.js file in the dist folder to spell check a file
+# Usage: ./my-cool-spellchecker <dictionary> <file-to-spellcheck>
+# If no arguments are provided, the script will use the default dictionary and spellcheck the fixtures/Small Document.txt file
+# If only one argument is provided, the script will use the default dictionary and spellcheck the provided file
+# If two arguments are provided, the script will use the first argument as the dictionary and the second as the file to spellcheck
+
+# Check if node is installed
+if ! [ -x "$(command -v node)" ]; then
+  echo 'Error: node is not installed.' >&2
+  exit 1
+fi
+
+if [ $# -eq 0 ]
+  then
+    echo "No arguments supplied, using default dictionary and spellchecking Fixture document"
+    echo "---------------------"
+    node ./dist/index.js '../fixtures/dictionary.txt' '../fixtures/Small document.txt'
+    exit 0
+fi
+
+if [ $# -eq 1 ]
+  then
+    echo "Only one argument supplied, using default dictionary and spellchecking $1"
+    echo "---------------------"
+    node ./dist/index.js '../fixtures/dictionary.txt' $1
+    exit 0
+fi
+
+if [ $# -eq 2 ]
+  then
+    echo "Two arguments supplied, using $1 as dictionary and $2 as file to spellcheck"
+    echo "---------------------"
+    node ./dist/index.js $1 $2
+    exit 0
+fi

@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Trie insert can insert a list of words 1`] = `
+Trie {
+  "root": {
+    "a": {
+      "isWord": true,
+      "p": {
+        "p": {
+          "isWord": true,
+          "l": {
+            "e": {
+              "isWord": true,
+            },
+          },
+        },
+        "r": {
+          "i": {
+            "c": {
+              "o": {
+                "t": {
+                  "isWord": true,
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+    "b": {
+      "a": {
+        "n": {
+          "a": {
+            "n": {
+              "a": {
+                "isWord": true,
+              },
+            },
+          },
+          "d": {
+            "a": {
+              "n": {
+                "a": {
+                  "isWord": true,
+                },
+              },
+            },
+            "isWord": true,
+          },
+          "isWord": true,
+        },
+      },
+    },
+    "c": {
+      "a": {
+        "t": {
+          "isWord": true,
+          "s": {
+            "isWord": true,
+          },
+        },
+      },
+    },
+    "d": {
+      "isWord": true,
+      "o": {
+        "g": {
+          "isWord": true,
+          "s": {
+            "isWord": true,
+          },
+        },
+        "isWord": true,
+        "t": {
+          "isWord": true,
+          "s": {
+            "isWord": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
